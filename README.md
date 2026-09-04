@@ -43,10 +43,13 @@ Bash
 chmod +x update_website.sh
 ./update_website.sh
 ```
-Evidencias do Projeto
-Automacao e CLI via SSM: 01_automation_ssm.png
+### Evidências do Projeto
 
-Configuracao no Console S3: 02_s3_configuration.png
+**Automação e CLI via SSM:**
+![Automação SSM](01_automation_ssm.png)
 
-Site Publicado e Online: 03_website_live.png
+**Configuração no Console S3:**
+![Configuração S3](02_s3_configuration.png)
 
+**Site Publicado e Online:**
+![Site no ar](03_website_live.png)
