@@ -52,4 +52,4 @@ chmod +x update_website.sh
 ![Configuração S3](02_s3_configuration.png)
 
 **Site Publicado e Online:**
-![Site no ar](03_website_live.png)
+![Site no ar](03_website_lives3.png)
