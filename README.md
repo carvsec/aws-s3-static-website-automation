@@ -30,10 +30,11 @@ sudo su - ec2-user
 aws configure
 aws s3api create-bucket --bucket pedrocarvsec --region us-west-2 --create-bucket-configuration LocationConstraint=us-west-2
 aws s3 website s3://pedrocarvsec/ --index-document index.html
+```
 2. Automacao do Deploy com Script Bash
 Criei o script update_website.sh para automatizar a sincronizacao dos arquivos do site com o bucket:
 
-Bash
+```Bash
 #!/bin/bash
 aws s3 sync /home/ec2user/sysops/static_website/ s3://pedrocarvsec/ --acl public-read
 Concedi permissao de execucao ao arquivo e rodei a automacao:
@@ -41,11 +42,11 @@ Concedi permissao de execucao ao arquivo e rodei a automacao:
 Bash
 chmod +x update_website.sh
 ./update_website.sh
+```
 Evidencias do Projeto
-Automacao e CLI via SSM: docs/01_automation_ssm.png
+Automacao e CLI via SSM: 01_automation_ssm.png
 
-Configuracao no Console S3: docs/02_s3_configuration.png
+Configuracao no Console S3: 02_s3_configuration.png
 
-Site Publicado e Online: docs/03_website_live.png
+Site Publicado e Online: 03_website_live.png
 
-URL publica do site: http://pedrocarvsec.s3-website-us-west-2.amazonaws.com
